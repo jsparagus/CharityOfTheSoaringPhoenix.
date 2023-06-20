@@ -1,0 +1,92 @@
+*{
+    font-family: sans-serif;
+}
+.ror{
+    background: rgb(255, 255, 255);
+    height: 70vh;
+   
+}
+
+.container{
+    margin-top: 15px;
+}
+
+.card{
+    width: 100%;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+}
+
+.card .box{
+    position:static;
+    color: #111;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+
+.card .box.front{
+    background-image: url(https://media.istockphoto.com/id/1340387265/vector/yellow-and-black-painted-marker-pen-frame.jpg?s=612x612&w=0&k=20&c=7LLnTv7my8JfKuvD9nE8hCuCMB9Lf-PAT9dwg-F6PhU=);
+    background-repeat: no-repeat;
+}
+
+.card .box.front,
+.card .box.back{
+    position:static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .box.front img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #262626;
+    margin-bottom: 25px;
+}
+
+.card:hover .box.front{
+    transform: rotateY(180deg);
+}
+.box.front h2{
+    font-family: bebas neue;
+}
+.box.front h4{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.social i{
+    margin: 0px 15px;
+}
+.card .box.back{
+    position: absolute;
+    background: #fedc02;
+    transform: rotateY(180deg);
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.card .box.back .fa-quote-left{
+    position: absolute;
+    top: 25px;
+    left: 150px;
+    font-size: 3.2rem;
+}
+
+.card:hover .box.back{
+    transform: rotateY(360deg);
+}
+

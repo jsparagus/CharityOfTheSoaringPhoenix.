@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    letter-spacing: 1px;
+}
+
+.navbar{
+    background-color: #F9F65A;
+}
+
+ul.nav li.nav-item a.nav-link:hover{
+ color: #3E99D9;
+ 
+ 
+}
+/* Hover Effects on Social Media Icons */
+
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.footerBottom{
+    padding: 10px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+    
+}
+@media (max-width : 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .responsive{
+        padding: 0px 20px;
+        background-color: white;
+    }
+}
